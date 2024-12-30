@@ -1,0 +1,56 @@
+<html>
+	<!-- THIS IS A COMMENT
+	WE SHALL CREATE Forms in this page 		(THIS IS RJ's code) -->
+
+
+
+
+
+
+<head>
+	<title>
+		JavaScript Forms Practicing
+	</title>
+	<script type="text/javascript">
+
+
+		function processdata()
+		{
+		var a = TheForm.FirstName.value
+		var b = TheForm.LastName.value
+		var c = TheForm.BYear.value
+		const d = new Date()
+		var e = parseFloat(d.getFullYear) - c
+		TheForm.Results.value = "Your full name is " +a+ " " +b+ ". Your age is approximately " +e +"."
+		}
+
+
+	</script>
+
+</head>
+
+
+
+<body>
+
+<center> <h1> THE FORM </h1> (this not included)</center>
+
+<form name="TheForm">
+
+
+
+	Enter your first name: <input type="text" name="FirstName" value="asd"> <br>
+	Enter your last name: <input type="text" name="LastName" value=""> <br>
+	Enter your birthyear: <input type="text" name="BYear" value=""><br>
+
+	<textarea name="Results" cols="50" rows="10" value="" readonly>
+	</textarea> <br>
+	<input type="submit" name="Submit" value="SUBMIT" onclick="processdata()"> <br>
+
+
+</form>
+
+</body>
+
+
+</html>
